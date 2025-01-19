@@ -1,6 +1,7 @@
 .App { 
   font-family: 'Teko', serif;
   color: #61bb61;
+  background-color: rgb(235, 239, 229);
 }
 
 .App-header {
@@ -16,6 +17,24 @@ h1 {
 
 h2{
   font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+}
+
+.social-link {
+  margin: 1rem;
+  justify-content: end;
+  background-color: rgb(235, 239, 229);
+  border: rgb(235, 239, 229) ;
+}
+
+.social-link:hover {
+  font-weight: bold;
+  font-size: larger;
+  color: #61bb61;
 }
 
 .Bio {

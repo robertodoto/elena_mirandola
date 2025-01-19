@@ -8,11 +8,17 @@ function App() {
           Elena Mirandola
         </h1>
         <h2>Live Music<br></br>&<br></br>Performance</h2>
-        <video width={320} height={240} alt="Elena playing violin">
-          <source src="./clip.mp4" type='video/mp4'></source>
+        <video loop width="250">
+        <source src='media/clip.mp4' type='video/mp4' />
         </video>
       </header>
-    
+      <nav>
+        <button className='social-link'><a href=''>Youtube</a></button>
+        <button className='social-link'><a href=''>Mail</a></button>
+        <button className='social-link'><a href='https://www.instagram.com/elenamirandolah/'>Instagram</a></button>
+        <button className='social-link'><a href='https://www.facebook.com/elena.mirandola.5?locale=it_IT'>Facebook</a></button>
+      </nav>
+      <section>
       <div className='Bio'>
         <p>
         Elena Mirandola è nata a Bologna il 12 novembre 1994. 
@@ -54,6 +60,9 @@ function App() {
         Nel 2022, ha iniziato a insegnare violino jazz presso la scuola Cemi di Bologna.
         </p>
       </div>
+      </section>
+
+
     </div>
   );
 }
