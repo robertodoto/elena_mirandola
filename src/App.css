@@ -1,0 +1,19 @@
+.App { 
+  font-family: 'Teko', serif;
+  color: #61bb61;
+}
+
+.App-header {
+  box-sizing: border-box;
+  text-align: center;
+  border: 0.1rem solid #61bb61;
+  margin: 0.5rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2{
+  font-size: 2rem;
+}
