@@ -17,3 +17,11 @@ h1 {
 h2{
   font-size: 2rem;
 }
+
+.Bio {
+  padding: 0.3rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: end;
+  font-size: 1.2rem;
+}
