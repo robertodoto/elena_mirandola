@@ -1,34 +1,49 @@
 .App { 
   font-family: 'Teko', serif;
   color: #61bb61;
-  background-color: rgb(235, 239, 229);
 }
 
 .App-header {
-  box-sizing: border-box;
-  text-align: center;
-  border: 0.1rem solid #61bb61;
-  margin: 0.5rem;
+  text-align: left;
+  margin-left: 3rem;
 }
 
 h1 {
   font-size: 5rem;
 }
 
-h2{
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+h2 {
   font-size: 2rem;
+  margin: 0;
+  text-align: right;
+  flex-grow: 0;
+}
+
+video {
+  width: 40%;
+  float: left;
+  margin-right: 5rem;
+  outline: 0.5rem solid #61bb61;
 }
 
 nav {
   display: flex;
   justify-content: end;
+  margin: 2rem;
 }
 
 .social-link {
   margin: 1rem;
   justify-content: end;
-  background-color: rgb(235, 239, 229);
-  border: rgb(235, 239, 229) ;
+  color:#61bb61;
+  border: none;
 }
 
 .social-link:hover {
@@ -37,10 +52,36 @@ nav {
   color: #61bb61;
 }
 
-.Bio {
-  padding: 0.3rem;
-  margin: 1rem;
+.Bio-container {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
   font-size: 1.2rem;
+  position: relative;
+  background-image: url("../public/media/foto1.jpg");
+  background-size: contain;
+  background-position: center;
 }
+
+.Bio-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); 
+  z-index: 0;
+}
+
+.bio {
+  margin-left: 2rem;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+

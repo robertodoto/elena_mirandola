@@ -7,20 +7,25 @@ function App() {
         <h1>
           Elena Mirandola
         </h1>
+        <div className='header-container'>
         <h2>Live Music<br></br>&<br></br>Performance</h2>
-        <video loop width="250">
-        <source src='media/clip.mp4' type='video/mp4' />
+        <video loop width="450" autoPlay muted>
+         <source src='/media/clip.mp4' type='video/mp4' />
+         Your browser does not support the video tag
         </video>
+        </div>
       </header>
+
+
       <nav>
-        <button className='social-link'><a href=''>Youtube</a></button>
-        <button className='social-link'><a href=''>Mail</a></button>
+        <button className='social-link'><a>Youtube</a></button>
+        <button className='social-link'><a>Mail</a></button>
         <button className='social-link'><a href='https://www.instagram.com/elenamirandolah/'>Instagram</a></button>
         <button className='social-link'><a href='https://www.facebook.com/elena.mirandola.5?locale=it_IT'>Facebook</a></button>
       </nav>
       <section>
-      <div className='Bio'>
-        <p>
+      <div className='Bio-container'>
+        <p className='bio'>
         Elena Mirandola è nata a Bologna il 12 novembre 1994. 
         All'età di tre anni, è stata portata dal padre, Stefano Mirandola (chitarrista), a una lezione di violino. 
         La scuola e gli insegnanti seguivano il metodo Suzuki, e da lì sono cominciate le sue lezioni: 
