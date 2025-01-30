@@ -65,10 +65,10 @@ function App() {
 
       <footer>
         <nav>
-          <button className='social-link'><a>Youtube</a></button>
-          <button className='social-link'><a>Mail</a></button>
-          <button className='social-link'><a href='https://www.instagram.com/elenamirandolah/'>Instagram</a></button>
-          <button className='social-link'><a href='https://www.facebook.com/elena.mirandola.5?locale=it_IT'>Facebook</a></button>
+          <button className='social-link' formTarget='_blank'><a><i className='fa-brands fa-youtube'></i></a></button>
+          <button className='social-link' formTarget='_blank'><a><i className='fa-solid fa-envelope'></i></a></button>
+          <button className='social-link'><a href='https://www.instagram.com/elenamirandolah/' formTarget='_blank'><i className='fa-brands fa-instagram'></i></a></button>
+          <button className='social-link'><a href='https://www.facebook.com/elena.mirandola.5?locale=it_IT' formTarget='_blank'><i className='fa-brands fa-facebook'></i></a></button>
         </nav>
       </footer>
     </div>
