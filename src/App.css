@@ -1,64 +1,49 @@
 .App { 
   font-family: 'Teko', serif;
-  color: #61bb61;
+  color: #a0e3a0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .App-header {
   text-align: left;
-  margin-left: 3rem;
+  margin-left: 1rem;
+  z-index: 1;
 }
 
 h1 {
   font-size: 5rem;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  margin-bottom: 0;
 }
 
 h2 {
   font-size: 2rem;
-  margin: 0;
-  text-align: right;
+  margin-left: 1rem;
+  margin-bottom: 5rem;
+  text-align: left;
   flex-grow: 0;
 }
 
+
 video {
-  width: 40%;
-  float: left;
-  margin-right: 5rem;
-  outline: 0.5rem solid #61bb61;
-}
-
-nav {
-  display: flex;
-  justify-content: end;
-  margin: 2rem;
-}
-
-.social-link {
-  margin: 1rem;
-  justify-content: end;
-  color:#61bb61;
-  border: none;
-}
-
-.social-link:hover {
-  font-weight: bold;
-  font-size: larger;
-  color: #61bb61;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
 .Bio-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
   padding: 0.3rem;
   font-size: 1.2rem;
-  position: relative;
+  padding-bottom: 5rem;
   background-image: url("../public/media/foto1.jpg");
   background-size: contain;
   background-position: center;
@@ -82,6 +67,34 @@ nav {
   z-index: 1;
   margin-left: 10rem;
   margin-right: 10rem;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+}
+
+nav {
+  bottom: 0;
+  width: 100%;
+  padding: 3rem;
+  z-index: 1;
+}
+
+.social-link {
+  margin: 1rem;
+  justify-content: end;
+  text-align: end;
+  border-radius: 3rem;
+  padding: 1rem;
+}
+
+.social-link:hover {
+  font-weight: bold;
+  font-size: larger;
 }
 
 

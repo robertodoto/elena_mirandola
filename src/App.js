@@ -7,22 +7,18 @@ function App() {
         <h1>
           Elena Mirandola
         </h1>
-        <div className='header-container'>
-        <h2>Live Music<br></br>&<br></br>Performance</h2>
-        <video loop width="450" autoPlay muted>
-         <source src='/media/clip.mp4' type='video/mp4' />
-         Your browser does not support the video tag
-        </video>
-        </div>
+        <h2>Live Music & Performance</h2>
+
       </header>
 
-
-      <nav>
-        <button className='social-link'><a>Youtube</a></button>
-        <button className='social-link'><a>Mail</a></button>
-        <button className='social-link'><a href='https://www.instagram.com/elenamirandolah/'>Instagram</a></button>
-        <button className='social-link'><a href='https://www.facebook.com/elena.mirandola.5?locale=it_IT'>Facebook</a></button>
-      </nav>
+      <div className='medianav'>
+        <video loop width="450" autoPlay muted>
+          <source src='/media/clip.mp4' type='video/mp4' />
+           Your browser does not support the video tag
+        </video>
+        
+      </div>
+    
       <section>
       <div className='Bio-container'>
         <p className='bio'>
@@ -67,7 +63,14 @@ function App() {
       </div>
       </section>
 
-
+      <footer>
+        <nav>
+          <button className='social-link'><a>Youtube</a></button>
+          <button className='social-link'><a>Mail</a></button>
+          <button className='social-link'><a href='https://www.instagram.com/elenamirandolah/'>Instagram</a></button>
+          <button className='social-link'><a href='https://www.facebook.com/elena.mirandola.5?locale=it_IT'>Facebook</a></button>
+        </nav>
+      </footer>
     </div>
   );
 }
