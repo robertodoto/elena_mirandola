@@ -7,17 +7,15 @@ function App() {
         <h1>
           Elena Mirandola
         </h1>
-        <h2>Live Music & Performance</h2>
-
+        <h2>
+          Live Music & Performance
+        </h2>
       </header>
 
-      <div className='medianav'>
-        <video loop width="450" autoPlay muted>
-          <source src='/media/clip.mp4' type='video/mp4' />
-           Your browser does not support the video tag
-        </video>
-        
-      </div>
+      <video className='back-video' loop width="450" autoPlay muted>
+        <source src='/media/clip.mp4' type='video/mp4' />
+         Your browser does not support the video tag
+      </video>
     
       <section>
       <div className='Bio-container'>
@@ -45,26 +43,39 @@ function App() {
         a Siena Jazz STRINGS (con Tomeka Reid, Mazz Swift e Silvia Bolognesi), e ad Arcevia Jazz 
         (con Lamberto Di Pietro, Emilio Marinelli, Massimo Morganti), dove ha vinto una borsa di studio per il Columbia College di Chicago.
 
-        <br></br><br></br>Appassionata della corrente del manouche francese, ha inciso un disco intitolato Gajè Gipsy Swing, nome anche della band con cui ha tenuto numerosi concerti per cinque anni. 
-        Quando non si esibiva nei locali, Elena suonava nelle strade, raccogliendo offerte a cappello. 
-        Ha collaborato e registrato brani con artisti come Cacciapaglia, Marco Bonvicini (Colors), Robbè (Vecchie Cicatrici), Baro Drom (Nisba), 
-        In Tormentata Quiete (Il Profumo del Blu), Luigi Bellino (Stati Limitrofi) e Cico (Mollo tutto e apro un chiringuito in Messico).
-
-        <br></br><br></br>Inoltre, ha intrapreso progetti in ambito bluegrass e country con "The Old Country Manners" e "The Tumbleweeds", 
-        dove oltre al violino, ha aggiunto anche la voce. Ha anche collaborato con il progetto "Best Before War" e con Roberta Selva nel duo "Millies Duo".
-
-        <br></br><br></br>Nel 2020, ha iniziato a esplorare la musica gitana e balkan, perfezionandosi con Geronimo Milko De Napoli (AALMA DILI) a Parigi
-        e Bastien Ribot (CMDL School). Ha quindi iniziato a collaborare con gruppi orientati alla musica balcanica, 
-        come "Baro Drom Orkestar", "Draba Orkestar" e "Kaba Nè".
+        <br></br><br></br>Ha intrapreso progetti in ambito bluegrass e country e nel 2020, ha iniziato a esplorare la musica gitana e balkan, perfezionandosi con Geronimo Milko De Napoli (AALMA DILI) a Parigi
+        e Bastien Ribot (CMDL School).
 
         <br></br><br></br>In parallelo alla sua carriera artistica, Elena insegna violino privatamente, nella Scuola Popolare Ivan Illich e nella Ricordi Music School. 
         Nel 2022, ha iniziato a insegnare violino jazz presso la scuola Cemi di Bologna.
         </p>
+      
+       <div className='collab-list'>
+        <h3>Dischi</h3>
+          <ul>
+            <li><a href='https://www.facebook.com/GajeGipsySwing/' target='_blank'>Gaje Gipsy Swing - Gaje Gipsy Swing</a></li>
+            <li><a href='https://open.spotify.com/intl-it/album/0myKE0U2uCaTyW4oLaahSH?si=KaFBMgV0TwqKJbxVwj_8kw' target='_blank'>Colors - Marco Bonvicini</a></li>
+            <li><a href='https://open.spotify.com/intl-it/album/0lN0TMVULWJ7YF0vuJCkTt?si=JSaIbVBeQHynu9OaEywniw' target='_blank'>Vecchie cicatrici - Robbè</a></li>
+            <li><a href='https://open.spotify.com/intl-it/album/3s5EQIp9zUOieZYsz73dw4?si=_T8FEBG0Rxm0X3wx3QqaEA' target='_blank'>Nisba - Baro Drom</a></li>
+            <li><a href='https://open.spotify.com/intl-it/album/0Owdxt2ggdVQvLbwUkKxbi?si=hjFiDtHwS7ysACCmT41cnw' target='_blank'>Il Profumo del Blu - In Tormentata Quiete</a></li>
+            <li><a href='https://open.spotify.com/intl-it/album/0R7SNU9cUqtYoEDTRWwQoF?si=DBorqdvMTpGJjcthfdjOJg' target='_blank'>Stati Limitrofi - Luigi Bellino</a></li>
+            <li><a href='https://open.spotify.com/intl-it/album/5YjHWJudiXQulYvjhavHaP?si=lv0Gn-PCRJ2UJ2lCYLu-uw' target='_blank'>Mollo tutto e apro un chiringuito in Messico - Cico</a></li>
+          </ul>
+          <h3>Altri progetti</h3>
+          <ul>
+            <li><a>The Old Country Manners</a></li>
+            <li><a href='https://www.instagram.com/bestbeforewar/' target='_blank'>Best Before War</a></li>
+            <li><a href='https://www.instagram.com/thetumbleweeds3/' target='_blank'>The Tumbleweeds</a></li>
+            <li><a href='https://www.facebook.com/people/Millies-Duo/100036782171406/' target='_blank'>Millies Duo</a></li>
+            <li><a href='https://www.instagram.com/draba_orkestar/' target='_blank'>Draba Orkestar</a></li>
+            <li><a href='https://www.instagram.com/kabane_band/' target='_blank'>Kaba Nè</a></li>
+          </ul>
+        </div>
       </div>
       </section>
 
       <footer>
-        <nav>
+        <nav className='social-nav'>
           <button className='social-link' formTarget='_blank'><a><i className='fa-brands fa-youtube'></i></a></button>
           <button className='social-link' formTarget='_blank'><a><i className='fa-solid fa-envelope'></i></a></button>
           <button className='social-link'><a href='https://www.instagram.com/elenamirandolah/' formTarget='_blank'><i className='fa-brands fa-instagram'></i></a></button>
